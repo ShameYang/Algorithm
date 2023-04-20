@@ -9,6 +9,7 @@ public class SingleLinkedList {
     int size;
     Node head;
 
+    //初始化
     public SingleLinkedList() {
         size = 0;
         head = new Node(0);

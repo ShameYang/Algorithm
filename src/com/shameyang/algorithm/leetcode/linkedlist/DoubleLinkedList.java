@@ -4,17 +4,19 @@ package com.shameyang.algorithm.leetcode.linkedlist;
  * @author ShameYang
  * @date 2023/4/20 16:21
  * @description 设计链表 - 双链表
+ * 与单链表同理，但是需要注意插入或删除时元素的位置
  */
 public class DoubleLinkedList {
     int size;
     Node head;
 
-
+    //初始化
     public DoubleLinkedList() {
         size = 0;
         head = new Node(0);
     }
 
+    //头插，需要注意是否为空表
     public void addAtHead(int val) {
         if (size == 0) {
             Node node = new Node(val);
@@ -31,6 +33,7 @@ public class DoubleLinkedList {
         }
     }
 
+    //尾插
     public void addAtTail(int val) {
         Node cur = head;
         for (int i = 0; i < size; i++) {
@@ -42,6 +45,7 @@ public class DoubleLinkedList {
         size++;
     }
 
+    //添加，注意添加位置
     public void addAtIndex(int index, int val) {
         if (index > size) {
             return;
@@ -66,6 +70,7 @@ public class DoubleLinkedList {
 
     }
 
+    //删除，注意删除位置
     public void deleteAtIndex(int index) {
         if (index < 0 || index >= size) {
             return;
@@ -83,6 +88,7 @@ public class DoubleLinkedList {
         size--;
     }
 
+    //查找
     public int get(int index) {
         if (index < 0 || index >= size) {
             return -1;
