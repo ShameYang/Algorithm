@@ -5,8 +5,8 @@ package com.shameyang.algorithm.leetcode.linkedlist;
  * @date 2023/4/20 17:56
  * @description 环形链表2 - 找到入环点
  * 思路：快慢指针，快指针走两步，慢指针走一步，先判断是否有环
- * 根据计算得到，出发点到入环点的距离 = 相遇点到入环点的距离，
- * 所以当两指针相遇时，慢指针回到出发点，快指针在相遇点，两指针共速走，再次相遇点即入环点
+ *      根据计算得到，出发点到入环点的距离 = 相遇点到入环点的距离，
+ *      所以当两指针相遇时，慢指针回到出发点，快指针在相遇点，两指针共速走，再次相遇点即入环点
  */
 public class detectCycle {
     public Node detectCycle(Node head) {

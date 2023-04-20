@@ -10,7 +10,7 @@ import java.util.List;
  * @description 翻转字符串中的单词，其中可能有多个空格
  * 思路：
  * 1.双指针
- * 先去除两端空格，然后从尾到头把每个单词添加到 StringBuilder 中，不断改变尾指针的位置，与头指针的位置进行对比，判断是否还有单词
+ *      先去除两端空格，然后从尾到头把每个单词添加到 StringBuilder 中，不断改变尾指针的位置，与头指针的位置进行对比，判断是否还有单词
  * 2.API + 正则
  */
 public class ReverseWords {

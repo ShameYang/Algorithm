@@ -5,8 +5,8 @@ package com.shameyang.algorithm.leetcode.string;
  * @date 2023/4/17 17:21
  * @description 最长公共前缀
  * 思路：
- * 1.纵向扫描
- * 2.API，找到最短字符串，然后使用 startsWith() 和 substring() 方法
+ *      1.纵向扫描
+ *      2.API，找到最短字符串，然后使用 startsWith() 和 substring() 方法
  */
 public class LongestCommonPrefix {
     //1.纵向扫描

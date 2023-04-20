@@ -4,7 +4,7 @@ package com.shameyang.algorithm.leetcode.linkedlist;
  * @author ShameYang
  * @date 2023/4/20 16:21
  * @description 设计链表 - 双链表
- * 与单链表同理，但是需要注意插入或删除时元素的位置
+ * 思路：与单链表同理，但是需要注意插入或删除时元素的位置
  */
 public class DoubleLinkedList {
     int size;
