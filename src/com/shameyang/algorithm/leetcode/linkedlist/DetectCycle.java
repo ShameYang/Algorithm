@@ -8,7 +8,7 @@ package com.shameyang.algorithm.leetcode.linkedlist;
  *      根据计算得到，出发点到入环点的距离 = 相遇点到入环点的距离，
  *      所以当两指针相遇时，慢指针回到出发点，快指针在相遇点，两指针共速走，再次相遇点即入环点
  */
-public class detectCycle {
+public class DetectCycle {
     public Node detectCycle(Node head) {
         if (head == null) {
             return null;
