@@ -9,7 +9,7 @@ import java.util.List;
  * @description 回文链表
  * 思路：
  *      1.拷贝 + 双指针：先将值复制到数组列表，然后双指针从两端向中心遍历
- *      2.快慢指针：先利用快慢指针找到中间位置，然后将后半部分反转，判断回文，最后恢复链表
+ *      2.快慢指针：先利用快慢指针找到中间位置，然后将后半部分反转，判断回文
  */
 public class IsPalindrome {
     //1.拷贝 + 双指针
@@ -59,7 +59,7 @@ public class IsPalindrome {
             prev = cur;
             cur = temp;
         }
-        //两端遍历，注意奇偶情况，否则出现空指针异常
+        //判断回文，注意奇偶情况，否则出现空指针异常
         while (head != prev) {
             if (head.val != prev.val) {
                 return false;
