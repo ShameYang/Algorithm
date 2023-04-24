@@ -5,9 +5,9 @@ package com.shameyang.algorithm.leetcode.linkedlist;
  * @date 2023/4/23 14:36
  * @description 移除链表元素
  * 思路：
- * 1.哑结点：无需考虑头结点是否为删除元素，直接遍历链表，结果返回 dummy.next 即可
- * 2.双指针
- * 3.递归
+ *      1.哑结点：无需考虑头结点是否为删除元素，直接遍历链表，结果返回 dummy.next 即可
+ *      2.双指针
+ *      3.递归
  */
 public class RemoveElements {
     //1.哑结点
