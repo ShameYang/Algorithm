@@ -13,7 +13,7 @@ public class MyQueue {
     private int p_start; // a pointer to indicate the start position
 
     public MyQueue() {
-        data = new ArrayList<Integer>();
+        data = new ArrayList<>();
         p_start = 0;
     }
 
