@@ -6,6 +6,7 @@ import java.util.Stack;
  * @author ShameYang
  * @date 2023/5/8 19:29
  * @description 每日温度
+ * 思路：单调栈
  */
 public class DailyTemperatures {
     public int[] dailyTemperatures(int[] t) {
