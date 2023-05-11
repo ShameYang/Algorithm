@@ -9,7 +9,7 @@ import java.util.LinkedList;
  * @description 设计哈希集合
  */
 public class MyHashSet {
-    private static final int BASE = 769;
+    private static final int BASE = 769; //距离 512 和 1024 都较远，且为质数，尽量增大加载因子
     private LinkedList[] data;
 
     public MyHashSet() {
@@ -55,6 +55,7 @@ public class MyHashSet {
         return false;
     }
 
+    /* 哈希函数 */
     private static int hash(int key) {
         return key % BASE;
     }

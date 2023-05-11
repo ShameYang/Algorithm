@@ -6,7 +6,7 @@ import java.util.LinkedList;
 /**
  * @author ShameYang
  * @date 2023/5/10 15:02
- * @description 设计哈希映射
+ * @description 设计哈希映射：与哈希集合类似，添加了内部类用于存储键值对
  */
 public class MyHashMap {
     private class Pair {
@@ -78,6 +78,7 @@ public class MyHashMap {
         }
     }
 
+    /*哈希函数*/
     private static int hash(int key) {
         return key % BASE;
     }
