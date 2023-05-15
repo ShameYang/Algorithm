@@ -7,7 +7,7 @@ import java.util.Map;
 /**
  * @author ShameYang
  * @date 2023/5/14 17:31
- * @description 最长字串的长度
+ * @description 至多包含两个不同字符的最长子串
  */
 public class LengthOfLongestSubstringTwoDistinct {
     public int lengthOfLongestSubstringTwoDistinct(String s) {

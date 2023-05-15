@@ -6,7 +6,7 @@ import java.util.Map;
 /**
  * @author ShameYang
  * @date 2023/5/13 14:09
- * @description 存在重复元素2
+ * @description 存在重复元素 II
  */
 public class ContainsDuplicate02 {
     public boolean containsNearbyDuplicate(int[] nums, int k) {
