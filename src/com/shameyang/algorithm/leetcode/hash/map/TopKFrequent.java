@@ -5,7 +5,7 @@ import java.util.*;
 /**
  * @author ShameYang
  * @date 2023/5/16 17:58
- * @description
+ * @description 前 K 个高频元素
  */
 public class TopKFrequent {
     public int[] topKFrequent(int[] nums, int k) {
@@ -14,7 +14,7 @@ public class TopKFrequent {
             map.put(i, map.getOrDefault(i, 0) + 1);
         }
         List<Map.Entry<Integer, Integer>> list = new ArrayList<>(map.entrySet());
-        Collections.sort(list, (o1, o2) -> {
+        list.sort((o1, o2) -> {
             return o2.getValue() - o1.getValue();  // 降序排序
         });
         int[] ans = new int[k];
