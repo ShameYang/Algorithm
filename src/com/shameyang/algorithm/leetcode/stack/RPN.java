@@ -10,7 +10,7 @@ import java.util.LinkedList;
  */
 public class RPN {
     public int evalRPN(String[] tokens) {
-        Deque<Integer> stack = new LinkedList<Integer>();
+        Deque<Integer> stack = new LinkedList<>();
         int n = tokens.length;
         for (int i = 0; i < n; i++) {
             String token = tokens[i];
