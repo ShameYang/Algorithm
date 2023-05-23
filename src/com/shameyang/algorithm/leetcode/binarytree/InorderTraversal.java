@@ -7,43 +7,40 @@ import java.util.List;
 
 /**
  * @author ShameYang
- * @date 2023/5/22 16:20
- * @description 先序遍历二叉树
- * 给你二叉树的根节点 root ，返回它节点值的前序遍历
- * 1.递归
- * 2.迭代（栈）
+ * @date 2023/5/23 20:21
+ * @description 中序遍历二叉树
  */
-public class PreorderTraversal {
+public class InorderTraversal {
     //1.递归
-    public List<Integer> preorderTraversal(TreeNode root) {
+    public List<Integer> inorderTraversal(TreeNode root) {
         List<Integer> res = new ArrayList<>();
-        preorder(root, res);
+        inorder(root, res);
         return res;
     }
 
-    public void preorder(TreeNode root, List<Integer> res) {
+    public void inorder(TreeNode root, List<Integer> res) {
         if (root == null) {
             return;
         }
+        inorder(root.left, res);
         res.add(root.val);
-        preorder(root.left, res);
-        preorder(root.right, res);
+        inorder(root.right, res);
     }
 
     //2.迭代
-    public List<Integer> preorderTraversal02(TreeNode root) {
-        List<Integer> res = new ArrayList<Integer>();
+    public List<Integer> inorderTraversal02(TreeNode root) {
+        List<Integer> res = new ArrayList<>();
         if (root == null) {
             return res;
         }
-        Deque<TreeNode> stack = new LinkedList<TreeNode>();
+        Deque<TreeNode> stack = new LinkedList<>();
         while (!stack.isEmpty() || root != null) {
             while (root != null) {
-                res.add(root.val);
                 stack.push(root);
                 root = root.left;
             }
             root = stack.pop();
+            res.add(root.val);
             root = root.right;
         }
         return res;
