@@ -13,7 +13,6 @@ public class BuildTree_PreAndInOrder {
 
     public TreeNode buildTree(int[] preorder, int[] inorder) {
         int n = inorder.length;
-        //建立哈希表，快速定位根节点
         for (int i = 0; i < n; i++) {
             map.put(inorder[i], i);
         }
@@ -21,20 +20,22 @@ public class BuildTree_PreAndInOrder {
     }
 
     public TreeNode helper(int[] preorder, int[] inorder, int pre_left, int pre_right, int in_left, int in_right) {
-        if (pre_left > pre_right) {
+        if (pre_left > pre_right || in_left > in_right) {
             return null;
         }
+        //根节点的值
+        int rootVal = preorder[pre_left];
         //在中序中定位根节点
-        int in_root = map.get(preorder[pre_left]);
+        int in_idx = map.get(rootVal);
         //先构建根节点
-        TreeNode root = new TreeNode(preorder[pre_left]);
+        TreeNode root = new TreeNode(rootVal);
         //左子树的节点数目
-        int size_left_subtree = in_root - in_left;
-
-        root.left = helper(preorder, inorder, pre_left + 1, pre_left + size_left_subtree,
-                in_left, in_root - 1);
-        root.right = helper(preorder, inorder, pre_left + size_left_subtree + 1, pre_right,
-                in_root + 1, in_right);
+        int size_left_subtree = in_idx - in_left;
+        
+        root.left = helper(preorder, inorder,
+                pre_left + 1, pre_left + size_left_subtree, in_left, in_idx - 1);
+        root.right = helper(preorder, inorder,
+                pre_left + size_left_subtree + 1, pre_right, in_idx + 1, in_right);
 
         return root;
     }
