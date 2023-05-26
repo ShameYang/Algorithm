@@ -31,7 +31,7 @@ public class BuildTree_PreAndInOrder {
         TreeNode root = new TreeNode(rootVal);
         //左子树的节点数目
         int size_left_subtree = in_idx - in_left;
-        
+
         root.left = helper(preorder, inorder,
                 pre_left + 1, pre_left + size_left_subtree, in_left, in_idx - 1);
         root.right = helper(preorder, inorder,
