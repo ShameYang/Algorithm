@@ -1,4 +1,4 @@
-package com.shameyang.algorithm.leetcode.binarytree;
+package com.shameyang.algorithm.leetcode.binary_tree;
 
 import java.util.LinkedList;
 import java.util.Queue;

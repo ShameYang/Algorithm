@@ -1,6 +1,6 @@
 package com.shameyang.algorithm.leetcode.bfs;
 
-import com.shameyang.algorithm.leetcode.binarytree.TreeNode;
+import com.shameyang.algorithm.leetcode.binary_tree.TreeNode;
 
 import java.util.ArrayDeque;
 import java.util.Queue;

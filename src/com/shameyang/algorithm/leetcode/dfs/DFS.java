@@ -1,6 +1,6 @@
 package com.shameyang.algorithm.leetcode.dfs;
 
-import com.shameyang.algorithm.leetcode.binarytree.TreeNode;
+import com.shameyang.algorithm.leetcode.binary_tree.TreeNode;
 
 /**
  * @author ShameYang
