@@ -8,11 +8,11 @@ import java.util.List;
  * @date 2023/5/29 14:06
  * @description 二叉搜索树迭代器
  */
-public class BSTIterator {
+public class Iterator {
     private int idx;
     private List<Integer> list;
 
-    public BSTIterator(TreeNode root) {
+    public Iterator(TreeNode root) {
         idx = 0;
         list = new ArrayList<>();
         inorderTraversal(root, list);

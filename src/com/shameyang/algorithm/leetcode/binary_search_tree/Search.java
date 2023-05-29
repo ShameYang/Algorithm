@@ -5,7 +5,7 @@ package com.shameyang.algorithm.leetcode.binary_search_tree;
  * @date 2023/5/29 14:11
  * @description 二叉搜索树 - 搜索
  */
-public class SearchBST {
+public class Search {
     public TreeNode searchBST(TreeNode root, int val) {
         if (root == null) {
             return null;
