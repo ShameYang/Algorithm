@@ -7,6 +7,7 @@ package com.shameyang.algorithm.leetcode.recursion_divideandconquer.linkedlist;
  */
 public class RemoveElements {
     public ListNode removeElements(ListNode head, int val) {
+        //终止条件
         if (head == null) {
             return null;
         }
