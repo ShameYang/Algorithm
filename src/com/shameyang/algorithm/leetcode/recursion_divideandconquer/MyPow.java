@@ -1,4 +1,4 @@
-package com.shameyang.algorithm.leetcode.recurtion_divedeandconquer;
+package com.shameyang.algorithm.leetcode.recursion_divideandconquer;
 
 /**
  * @author ShameYang
