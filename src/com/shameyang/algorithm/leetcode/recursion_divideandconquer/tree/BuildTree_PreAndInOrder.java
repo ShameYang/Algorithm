@@ -1,4 +1,4 @@
-package com.shameyang.algorithm.leetcode.recursion_divideandconquer.binary_tree;
+package com.shameyang.algorithm.leetcode.recursion_divideandconquer.tree;
 
 import com.shameyang.algorithm.leetcode.binary_tree.TreeNode;
 

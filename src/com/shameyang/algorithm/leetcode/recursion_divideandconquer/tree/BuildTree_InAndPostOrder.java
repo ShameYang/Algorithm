@@ -1,15 +1,16 @@
-package com.shameyang.algorithm.leetcode.binary_tree;
+package com.shameyang.algorithm.leetcode.recursion_divideandconquer.tree;
+
+import com.shameyang.algorithm.leetcode.binary_tree.TreeNode;
 
 import java.util.HashMap;
 import java.util.Map;
 
 /**
  * @author ShameYang
- * @date 2023/5/25 17:41
+ * @date 2023/6/5 12:34
  * @description 从中序与后序遍历序列构造二叉树
- * 思路：根据后序找到根节点，然后根据中序分为左右子树
  */
-public class BuildTree_PostAndInOrder {
+public class BuildTree_InAndPostOrder {
     int post_idx;
     int[] inorder;
     int[] postorder;
